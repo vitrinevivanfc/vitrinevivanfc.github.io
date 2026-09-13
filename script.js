@@ -1,0 +1,2 @@
+
+const modal=document.getElementById('modal');document.getElementById('share').onclick=()=>modal.classList.add('open');document.getElementById('close').onclick=()=>modal.classList.remove('open');modal.onclick=e=>{if(e.target===modal)modal.classList.remove('open')};document.getElementById('copy').onclick=async()=>{await navigator.clipboard.writeText('https://wa.me/5515936182306');document.getElementById('copy').textContent='Link copiado';setTimeout(()=>document.getElementById('copy').textContent='Copiar link do WhatsApp',1600)};
